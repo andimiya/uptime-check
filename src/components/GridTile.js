@@ -1,27 +1,19 @@
 import React from 'react';
-import moment from 'moment';
 import { Link } from 'react-router-dom';
+import BuoyCall from '../assets/buoy-call-image.png';
 
-const GridTile = props => {
+const ArticleHeader = props => {
   return (
-    <Link to={`articles/${props.slug}`} className="gridtile-container">
-      <div className="gridtile-text">
-        <h2>
-          {props.title}
-        </h2>
-        <p>
-          {props.author}
-        </p>
-        <p>
-          {moment(props.date).format('LL')}
-        </p>
-      </div>
-      <div
-        className="gridtile-image"
-        style={{ backgroundImage: `url(${props.image})` }}
-      />
-    </Link>
+    <div className="grid-container">
+      <Link to="/">
+        <div className="grid-text">
+        <div className="grid-image">
+          <img src={BuoyCall} alt="Buoy Call" />
+        </div>
+        </div>
+      </Link>
+    </div>
   );
 };
 
-export default GridTile;
+export default ArticleHeader;
