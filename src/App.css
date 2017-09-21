@@ -25,9 +25,9 @@
         color: black;
         font-size: 1.1rem; } }
 
-.outer {
-  max-width: 1100px;
-  margin: auto; }
+.work-container {
+  margin: auto;
+  box-sizing: border-box; }
 
 .header-container {
   padding: 4rem 3rem 3rem; }
@@ -48,41 +48,36 @@
   box-sizing: border-box;
   flex-flow: row wrap;
   align-items: stretch;
-  justify-content: center;
-  padding: 8px; }
+  justify-content: center; }
+
+.grid-container-outer {
+  display: flex;
+  width: 40%;
+  margin: 2rem; }
 
 .grid-container {
-  display: block;
-  width: 400px;
-  height: 300px;
-  box-sizing: border-box;
-  margin: 2rem;
-  background-color: purple;
-  transition: all 0.2s ease; }
-  .grid-container .grid-text {
-    position: absolute;
-    z-index: 1;
-    width: 400px;
-    overflow: hidden; }
-    .grid-container .grid-text h2 {
-      visibility: hidden; }
-    .grid-container .grid-text p {
-      visibility: hidden; }
-  .grid-container:hover {
-    transition: all 0.2s ease; }
-    .grid-container:hover .grid-text {
-      width: 400px;
-      height: 300px;
-      opacity: 0.8;
-      transition: all 0.2s ease;
-      background-repeat: no-repeat;
-      box-sizing: border-box; }
-
-.grid-image {
+  flex: 0 0 100%;
+  flex-wrap: wrap;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  display: block;
-  width: 100%;
-  height: 300px;
   box-sizing: border-box; }
+
+.grid-image-block {
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box; }
+  .grid-image-block:hover .grid-hover {
+    box-sizing: border-box;
+    height: 300px;
+    background-color: purple;
+    opacity: 0.2; }
+
+.grid-subtext {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; }
