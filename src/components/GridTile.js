@@ -5,17 +5,17 @@ const GridTile = props => {
   return (
     <div className="grid-container-outer">
       <div className="grid-container">
-        <div className="grid-image-block" style={{backgroundImage: 'url(https://s3.amazonaws.com/web-ready-andrea/lisbon-sunset-edited+4+2.png)'}}>
+        <div className="grid-image-block" style={{backgroundImage: `url(${props.workSample})`}}>
           <Link to="/work/HA">
             <div className="grid-hover"></div>
           </Link>
         </div>
         <div className="grid-subtext">
           <div className="caption-title">
-            <p>Hawaiian Airlines Redesign</p>
+            <p>{props.title}</p>
           </div>
           <div className="caption-subtext">
-            <p>Product Owner</p>
+            <p>{props.position}</p>
           </div>
         </div>
       </div>

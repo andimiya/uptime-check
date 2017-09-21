@@ -1,5 +1,6 @@
 import React from 'react';
 import GridTile from '../../components/GridTile';
+import { createClient } from 'contentful';
 import { SPACE_ID, ACCESSTOKEN } from '../../constants';
 
 class WorkContainer extends React.Component {
@@ -10,34 +11,35 @@ class WorkContainer extends React.Component {
       space: SPACE_ID,
       accessToken: ACCESSTOKEN
     });
-    this.getWorkContent = this.getWorkContent.bind(this);
     this.state = {
-      content:[],
+      content: [],
+      workSampleImage: '',
       error: ''
     };
   }
 
   componentDidMount(){
-    this.client.getContentTypes()
-      .then(this.getWorkContent)
-      .catch((error) => {
-        console.log(error);
-      });
+    this.client.getEntries()
+    .then((entry) => {
+      this.setState ({ content: entry.items })
+    })
   }
 
-  getWorkContent({ content }) {
-
-  }
-
-  render() {
+  render(props) {
+    console.log(this.state, 'state');
     return (
       <div className="work-container outer">
         <div className="grid-area-container">
-          <GridTile />
-          <GridTile />
-          <GridTile />
-          <GridTile />
-          <GridTile />
+          {this.state.content.map(({ fields, sys }, index) => {
+            return (
+              <GridTile
+                key={sys.id}
+                title={fields.title}
+                position={fields.position}
+                workSample={fields.position}
+              />
+            );
+          })}
         </div>
       </div>
     )

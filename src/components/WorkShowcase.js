@@ -4,7 +4,7 @@ const WorkShowcase = props => {
   return (
     <div className="showcase-container-outer">
       <div className="showcase-container">
-        <div className="showcase-image-block" style={{backgroundImage: 'url(https://s3.amazonaws.com/web-ready-andrea/lisbon-sunset-edited+4+2.png)'}}>
+        <div className="showcase-image-block" style={{backgroundImage: `url(${props.workSample})`}}>
         </div>
         <div className="showcase-text-container">
           <div className="showcase-title">
