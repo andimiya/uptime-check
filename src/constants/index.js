@@ -1,6 +1,2 @@
-export const BLOG_POST_ENDPOINT =
-  'https://lx611j6kog.execute-api.us-west-2.amazonaws.com/dev/blog-posts';
-const MAILCHIMP_API =
-  'https://zkn32nddgc.execute-api.us-east-1.amazonaws.com/prod';
-export const CONTACT_ENDPOINT = `${MAILCHIMP_API}/contact-form`;
-export const DRAFT_MANUAL_ENDPOINT = `${MAILCHIMP_API}/draft-manual`;
+export const SPACE_ID = 'g8v8m4ume5nv';
+export const APITOKEN = '0420c0e836dd396ded489fdd8116c5ac657b39332e2d967204e9f53453b321bb';

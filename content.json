@@ -1,0 +1,32 @@
+{
+  "showcaseContent": [
+    {
+      "title": "Hawaiian Airlines Website Redesign",
+      "position": "",
+      "imageUrl": "https://s3.amazonaws.com/web-ready-andrea/lisbon-sunset-edited+4+2.png",
+      "contentDescription": "<p>Served as Product Owner on the HawaiianAirlines.com re-platforming project and guided cross-functional teams to successfully decommission the old HawaiianAirlines.com websites and launch seven multi-currency, multi-lingual websites for the airline.</p>
+      <p>Worked through many risks and challenges that arose during the span of the project such as the movement from waterfall to agile methodologies, adoption of new systems and platforms, defining roles and responsibilities across the project, and working with many offshore team members.</p>
+      <p>Managed the needs of the airline and its many stakeholders against the priorities of IT, government regulations and project timelines to ensure everyone was working towards a clear vision, hitting milestones set by the business, and accomplishing the goals of the project.</p>",
+      "websiteUrl": "https://hawaiianairlines.com"
+    },
+    {
+      "title": "BuoyCall",
+      "position": "Full-Stack Developer",
+      "imageUrl": "https://s3.amazonaws.com/web-ready-andrea/lisbon-sunset-edited+4+2.png",
+      "contentDescription": "View historical data for buoys across our oceans and lakes, or adopt a shark and we'll donate to charity.",
+      "websiteUrl": "https://buoycall.org"
+    },
+    {
+      "title": "",
+      "position": "",
+      "imageUrl": "",
+      "contentDescription": ""
+    },
+    {
+      "title": "",
+      "position": "",
+      "imageUrl": "",
+      "contentDescription": ""
+    }
+  ]
+}
