@@ -87,3 +87,28 @@
     display: flex;
     justify-content: center;
     margin: 0; }
+
+.showcase-container {
+  display: flex;
+  border-bottom: 1px solid grey;
+  padding-bottom: 3rem;
+  margin: 0 3rem 3rem 3rem; }
+
+.showcase-image-block {
+  margin: 2rem;
+  width: 500px;
+  height: 250px;
+  flex: 0 0 40%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box; }
+
+.showcase-text-container {
+  padding: 0 2rem 0 2rem; }
+  .showcase-text-container .showcase-title h1 {
+    letter-spacing: 0.6px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase; }

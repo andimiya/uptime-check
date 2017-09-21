@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BuoyCall from '../assets/buoy-call-image.png';
 
 const GridTile = props => {
   return (
     <div className="grid-container-outer">
       <div className="grid-container">
         <div className="grid-image-block" style={{backgroundImage: 'url(https://s3.amazonaws.com/web-ready-andrea/lisbon-sunset-edited+4+2.png)'}}>
-          <Link to="/">
+          <Link to="/work/HA">
             <div className="grid-hover"></div>
           </Link>
         </div>
