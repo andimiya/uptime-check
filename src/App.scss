@@ -21,13 +21,21 @@ $large-width: 1024px;
 }
 
 #app-container {
-  background-color: #fbfaf8;
+  font-family: 'futura-pt';
 }
 
 .navbar-container {
-  padding: 3rem 3rem 3rem 3rem;
+  padding: 5rem 5rem 1rem 3rem;
   display: flex;
   justify-content: space-between;
+}
+
+.logo-container {
+  h2 {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+  }
 }
 
 .menu-container {
@@ -43,11 +51,12 @@ $large-width: 1024px;
     text-align: center;
     p,
     a {
-      font-family: 'Catamaran', 'Helvetica', sans-serif;
       text-transform: uppercase;
       text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 1.8px;
       color: black;
-      font-size: 1.1rem;
     }
   }
 }
@@ -55,22 +64,6 @@ $large-width: 1024px;
 .work-container {
   margin: auto;
   box-sizing: border-box;
-}
-
-.header-container {
-  padding: 4rem 3rem 3rem;
-  h1 {
-    font-size: 3.8rem;
-    line-height: 4rem;
-    margin: 0;
-    font-family: 'Catamaran', 'Helvetica', sans-serif;
-    padding-bottom: 1.5rem;
-    font-weight: normal;
-    @include medium {
-      font-size: 5.5rem;
-      line-height: 6rem;
-    }
-  }
 }
 
 .grid-area-container {
@@ -119,5 +112,23 @@ $large-width: 1024px;
 .grid-subtext {
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+
+  .caption-title {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+    margin: 1.5rem 0 0 0;
+    p {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+  }
+  .caption-subtext {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
 }

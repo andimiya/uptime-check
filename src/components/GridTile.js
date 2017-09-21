@@ -12,8 +12,12 @@ const GridTile = props => {
           </Link>
         </div>
         <div className="grid-subtext">
-          <p>Name of the Project</p>
-          <p>Role</p>
+          <div className="caption-title">
+            <p>Hawaiian Airlines Redesign</p>
+          </div>
+          <div className="caption-subtext">
+            <p>Product Owner</p>
+          </div>
         </div>
       </div>
     </div>
