@@ -13,7 +13,6 @@ class WorkContainer extends React.Component {
     });
     this.state = {
       content: [],
-      workSampleImage: '',
       error: ''
     };
   }
@@ -35,6 +34,7 @@ class WorkContainer extends React.Component {
                 key={sys.id}
                 title={fields.title}
                 position={fields.position}
+                slug={fields.slug}
                 workSample={fields.workSample.fields.file.url}
               />
             );
