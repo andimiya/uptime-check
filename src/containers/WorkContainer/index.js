@@ -31,12 +31,13 @@ class WorkContainer extends React.Component {
       <div className="work-container outer">
         <div className="grid-area-container">
           {this.state.content.map(({ fields, sys }, index) => {
+            console.log(fields.workSample.fields.file.url);
             return (
               <GridTile
                 key={sys.id}
                 title={fields.title}
                 position={fields.position}
-                workSample={fields.position}
+                workSample={fields.workSample.fields.file.url}
               />
             );
           })}
