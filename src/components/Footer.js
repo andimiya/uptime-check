@@ -1,34 +1,38 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+const instagramSVG = require('../assets/instagram.svg');
+const facebookSVG = require('../assets/facebook.svg');
+const githubSVG = require('../assets/github.svg');
+const linkedinSVG = require('../assets/linkedin.svg');
+const gmailSVG = require('../assets/gmail.svg');
 
 const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-container-inner">
         <div className="footer-item">
-          <Link to="/">
-            <p>Home</p>
-          </Link>
+          <a href="https://www.linkedin.com/in/andreatakamiya/">
+            <img src={linkedinSVG} alt="Instagram" />
+          </a>
         </div>
         <div className="footer-item">
-          <Link to="/articles">
-            <p>Articles</p>
-          </Link>
+          <a href="https://github.com/andimiya">
+            <img src={githubSVG} alt="Github" />
+          </a>
         </div>
         <div className="footer-item">
-          <Link to="/draftmanual">
-            <p>2017 Draft</p>
-          </Link>
+          <a href="https://www.instagram.com/andi_miya/">
+            <img src={instagramSVG} alt="Instagram" />
+          </a>
         </div>
         <div className="footer-item">
-          <Link to="/about">
-            <p>About Us</p>
-          </Link>
+          <a href="mailto:takamiya.andrea@gmail.com">
+            <img src={gmailSVG} alt="Email" />
+          </a>
         </div>
         <div className="footer-item">
-          <Link to="/contact">
-            <p>Contact Us</p>
-          </Link>
+          <a href="https://www.facebook.com/andreatakamiya">
+            <img src={facebookSVG} alt="Facebook" />
+          </a>
         </div>
       </div>
     </div>
