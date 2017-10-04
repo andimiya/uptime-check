@@ -6,8 +6,8 @@ const GridTile = props => {
     <div className="grid-container-outer">
       <div className="grid-container">
         <div className="grid-image-block" style={{backgroundImage: `url(${props.workSample})`}}>
-          <Link to={`/work/${props.slug}`}>
-            <div className="grid-hover"></div>
+          <Link to={`/work/${props.slug}`} onClick={props.selectedWork}>
+            <div id={props.slug} className="grid-hover"></div>
           </Link>
         </div>
         <div className="grid-subtext">

@@ -6,13 +6,14 @@ import { SPACE_ID, ACCESSTOKEN } from '../../constants';
 class WorkContainer extends React.Component {
   constructor(props) {
     super(props);
-
+    this.selectedWork = this.selectedWork.bind(this);
     this.client = createClient({
       space: SPACE_ID,
       accessToken: ACCESSTOKEN
     });
     this.state = {
       content: [],
+      selectedWork: '',
       error: ''
     };
   }
@@ -22,6 +23,10 @@ class WorkContainer extends React.Component {
     .then((entry) => {
       this.setState ({ content: entry.items })
     })
+  }
+
+  selectedWork(e){
+    console.log(e.target.id);
   }
 
   render(props) {
@@ -36,6 +41,7 @@ class WorkContainer extends React.Component {
                 position={fields.position}
                 slug={fields.slug}
                 workSample={fields.workSample.fields.file.url}
+                selectedWork={this.selectedWork}
               />
             );
           })}
