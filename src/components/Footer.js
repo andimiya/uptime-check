@@ -1,6 +1,5 @@
 import React from 'react';
 const instagramSVG = require('../assets/instagram.svg');
-const facebookSVG = require('../assets/facebook.svg');
 const githubSVG = require('../assets/github.svg');
 const linkedinSVG = require('../assets/linkedin.svg');
 const gmailSVG = require('../assets/gmail.svg');
@@ -27,11 +26,6 @@ const Footer = () => {
         <div className="footer-item">
           <a href="mailto:takamiya.andrea@gmail.com">
             <img src={gmailSVG} alt="Email" />
-          </a>
-        </div>
-        <div className="footer-item">
-          <a href="https://www.facebook.com/andreatakamiya">
-            <img src={facebookSVG} alt="Facebook" />
           </a>
         </div>
       </div>

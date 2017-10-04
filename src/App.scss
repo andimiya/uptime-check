@@ -163,3 +163,13 @@ $large-width: 1024px;
     }
   }
 }
+
+.footer-container-inner {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5rem 5rem 6rem 5rem;
+}
+
+.footer-item {
+  margin: 0.5rem;
+}
