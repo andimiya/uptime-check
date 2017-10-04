@@ -69,7 +69,7 @@
   .grid-image-block:hover .grid-hover {
     box-sizing: border-box;
     height: 300px;
-    background-color: purple;
+    background-color: #99A89E;
     opacity: 0.2; }
 
 .grid-subtext {

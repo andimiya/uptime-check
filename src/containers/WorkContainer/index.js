@@ -26,12 +26,10 @@ class WorkContainer extends React.Component {
   }
 
   render(props) {
-    console.log(this.state, 'state');
     return (
       <div className="work-container outer">
         <div className="grid-area-container">
           {this.state.content.map(({ fields, sys }, index) => {
-            console.log(fields.workSample.fields.file.url);
             return (
               <GridTile
                 key={sys.id}
