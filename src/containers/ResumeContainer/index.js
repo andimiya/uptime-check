@@ -1,17 +1,16 @@
 import React from 'react';
-import AboutUsBody from '../../components/AboutUsBody';
+import ResumeBody from '../../components/ResumeBody';
 
-const AboutUsContainer = () => {
+const ResumeContainer = () => {
   return (
     <div className="about-us-container outer">
       <div className="header-container-outer">
         <div className="header-container div-container">
-          HEADER
         </div>
       </div>
-      <AboutUsBody />
+      <ResumeBody />
     </div>
   );
 };
 
-export default AboutUsContainer;
+export default ResumeContainer;

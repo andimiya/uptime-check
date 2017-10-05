@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 import HomepageContainer from './containers/HomepageContainer';
 import WorkContainer from './containers/WorkContainer';
 import WorkShowcaseContainer from './containers/WorkShowcaseContainer';
-import AboutUsContainer from './containers/AboutUsContainer';
+import ResumeContainer from './containers/ResumeContainer';
 import Footer from './components/Footer';
 
 const App = () =>
@@ -16,7 +16,7 @@ const App = () =>
         <Route exact path="/" component={HomepageContainer} />
         <Route exact path="/work" component={WorkContainer} />
         <Route exact path="/work/:work" component={WorkShowcaseContainer} />
-        <Route exact path="/about" component={AboutUsContainer} />
+        <Route exact path="/resume" component={ResumeContainer} />
         <Footer />
       </div>
     </Router>
