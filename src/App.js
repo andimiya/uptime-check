@@ -15,7 +15,7 @@ const App = () =>
         <NavBar />
         <Route exact path="/" component={HomepageContainer} />
         <Route exact path="/work" component={WorkContainer} />
-        <Route exact path="/work/:ha" component={WorkShowcaseContainer} />
+        <Route exact path="/work/:work" component={WorkShowcaseContainer} />
         <Route exact path="/about" component={AboutUsContainer} />
         <Footer />
       </div>

@@ -26,7 +26,7 @@ class WorkContainer extends React.Component {
   }
 
   selectedWork(e){
-    console.log(e.target.id);
+    this.setState({ selectedWork: e.target.id })
   }
 
   render(props) {
@@ -37,6 +37,7 @@ class WorkContainer extends React.Component {
             return (
               <GridTile
                 key={sys.id}
+                id={sys.id}
                 title={fields.title}
                 position={fields.position}
                 slug={fields.slug}

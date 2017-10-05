@@ -13,33 +13,30 @@ class WorkShowcaseContainer extends React.Component {
       accessToken: ACCESSTOKEN
     });
     this.state = {
-      content: [],
+      content: {},
       error: ''
     };
   }
 
   componentDidMount(){
+    console.log(this.props.location.pathname, 'location');
+    let urlSlug = this.props.location.pathname.split('/').pop();
+    console.log(urlSlug, 'url');
     this.client.getEntries()
     .then((entry) => {
-      this.setState ({ content: entry.items })
+      console.log(entry, 'entry');
+      if (urlSlug === entry.fields) {
+        this.setState ({ content: entry })
+      }
+      this.setState ({ content: entry })
     })
   }
 
   render(props) {
+    console.log(this.state, 'state');
     return (
       <div className="work-showcase-container outer">
-        {this.state.content.map(({ fields, sys }, index) => {
-          console.log(fields);
-          return (
-            <WorkShowcase
-              key={sys.id}
-              title={fields.title}
-              position={fields.position}
-              description={fields.description}
-              workSample={fields.workSample.fields.file.url}
-            />
-          )
-        })}
+        )
         <WorkContainer />
       </div>
     );
