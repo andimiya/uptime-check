@@ -1,43 +1,108 @@
 import React from 'react';
-const instagramSVG = require('../assets/instagram.svg');
 const githubSVG = require('../assets/github.svg');
 const linkedinSVG = require('../assets/linkedin.svg');
 const gmailSVG = require('../assets/gmail.svg');
+const educationIcon = require('../assets/educationIcon.svg');
+const techskillsIcon = require('../assets/techskillsIcon.svg');
+const certificationsIcon = require('../assets/certificationsIcon.svg');
+const profilePicColor = require('../assets/andrea-picture-color.jpg');
+const profilePicBw = require('../assets/andrea-picture-blackwhite.jpeg');
 
 const ResumeBody = props => {
   return (
     <div className="resume-container">
       <div className="resume-body-container">
         <div className="sidebar-container">
-        <h1 className="name">Andrea Takamiya</h1>
-        <p className="address-block">Honolulu, HI 96816 | (808) 295-4260 | <a href="mailto:takamiya.andrea@gmail.com">
-          <img src={gmailSVG} height="18px" alt="Email Andrea" /> takamiya.andrea@gmail.com</a>
-          <a href="https://github.com/andimiya">
-          <img src={githubSVG} height="18px" alt="Check out my code" /> andimiya</a><br /><a href="https://www.linkedin.com/in/andreatakamiya">
-          <img src={linkedinSVG} height="18px" alt="Connect on LinkedIn" />  andreatakamiya</a></p>
+          <h1 className="name">Andrea Takamiya</h1>
+          <div className="picture">
+            <img src={profilePicBw} width="250px" alt="Andrea Takamiya" />
+          </div>
+          <p className="address-block">
+            <span>
+              <a href="mailto:takamiya.andrea@gmail.com">
+              <img src={gmailSVG} height="18px" alt="Email Andrea" /> Takamiya.Andrea@Gmail.com</a>
+            </span>
+            <span>
+              <a href="https://github.com/andimiya">
+              <img src={githubSVG} height="18px" alt="Check out my code" /> Github.com/Andimiya</a>
+            </span>
+            <span>
+              <a href="https://www.linkedin.com/in/andreatakamiya">
+              <img src={linkedinSVG} height="18px" alt="Connect on LinkedIn" />  LinkedIn.com/AndreaTakamiya</a>
+            </span>
+          </p>
+          <hr />
+          <div className="header-with-icon">
+            <img src={educationIcon} height="32px" alt="Education" />
+            <h2 className="education">Education</h2>
+          </div>
+          <h3 className="full-stack-javascript-developer">Full Stack Javascript Developer</h3>
+          <p><a href="http://www.devleague.com">DEVLEAGUE</a><br />Honolulu, Hawaii<br />Nov 2016 - May 2017  </p>
+          <h3 className="bachelor-of-arts-in-business-administration">Bachelor of Arts in Business Administration</h3>
+          <p>Concentration in Marketing and International Business<br />University of Oregon, 2005 – 2007<br />University of Hawaii at Manoa , 2008 – 2009  </p>
+          <hr />
+          <div className="header-with-icon">
+            <img src={techskillsIcon} height="32px" alt="Technical Skills" />
+            <h2 className="technical-skills">Technical Skills</h2>
+          </div>
+          <h3 className="languages">Languages</h3>
+          <p>JavaScript, HTML5, CSS, SQL</p>
+          <h3 className="frontend-proficiencies">Frontend</h3>
+          <p>HTML5, CSS3, SASS, Javascript, ES6, React, Redux</p>
+          <h3 className="server-side-proficiencies">Server-Side</h3>
+          <p>NodeJS, Express, Sequelize</p>
+          <h3 className="database-proficiencies">Database</h3>
+          <p>PostgreSQL</p>
+          <h3 className="web-skills">Web Skills</h3>
+          <ul>
+          <li>Responsive/Mobile First Web Development</li>
+          <li>Relational - and Non-Relational Database Modeling</li>
+          <li>RESTful API Development</li>
+          <li>API Integration</li>
+          <li>Shell Scripting</li>
+          </ul>
+          <h3 className="other-skills-and-certifications">Marketing and Other Skills</h3>
+          <ul>
+          <li>Adobe Sitecatalyst (Omniture)</li>
+          <li>Adobe Test &amp; Target</li>
+          <li>Farelogix Merchandising System </li>
+          <li>Microsoft Sharepoint CMS</li>
+          <li>Web layouts and wire-framing</li>
+          <li>Adobe Photoshop CS6</li>
+          <li>Adobe Illustrator CS6</li>
+          <li>Google AdWords</li>
+          </ul>
+          <hr />
+          <div className="header-with-icon">
+            <img src={certificationsIcon} height="24px" alt="Certifications" />
+            <h2 className="technical-skills">Certifications</h2>
+          </div>
+            <p>
+            Sitecore CMS ( Sitecore Certified)
+            Sitecore OMS (Sitecore Certified)
+            Sitecore DMS (Sitecore Certified)
+            </p>
         </div>
-          <div className="right-panel-container">
-            <div className="resume-container">
-              <h2 className="development-experience">Development Experience</h2>
-              <h3 className="devleague">DevLeague</h3>
-              <p>Full Stack Developer Bootcamp</p><p>Nov 2016 - May 2017  </p>
-              <ul>
-              <li>Immersed myself in learning how to build full-stack applications in Javascript for 20-30 hours per week, while keeping up with my full-time day job as a Project Manager.</li>
-              <li>Ventured beyond the typical bootcamp curriculum by learning Shell scripting to automate the collection and cleaning of data and insertion into databases, and DevOps tasks such as setting servers and databases for production.</li>
-              <li>Created life-long friendships and learned the importance of working as a team through group projects and pair-programming.</li>
-              </ul>
-              <hr />
-              <h3 className="buoy-call-web-application">Buoy Call Web Application</h3>
-              <p><a href="https://github.com/andimiya/buoy-call">Github</a> | <a href="https://buoycall.org">BuoyCall.org</a><br />April 2017<br />Collaborated with 3 other students to create an application which found and displayed historical buoy data as well plotted both buoys and sharks on a map. Users were able to interact with the application by clicking on any buoy to view graphed data, and could also select a shark on the map and name it by making a five dollar donation.</p>
-              <h4 className="contributions-to-this-project-include-">Contributions to this project include:</h4>
-              <ul>
-              <li>Creating the database schemas for our buoy data and buoy coordinates data.</li>
-              <li>Writing of bash scripts to collect data from various webpages, create csv files, adjust headers and file contents to be importable into our database, then import the data into PostgreSQL.</li>
-              <li>Stripe implementation on both the server-side and client-side so our application could receive real credit card donations.</li>
-              <li>Deployment of the application which involved nginx, pm2, the configuration and setup of two Digital Ocean droplets (one for our database and one for our application), and  implementation of LetsEncrypt.</li>
-              </ul>
-            </div>
-          <div className="resume-container">
+        <div className="right-panel-container">
+          <h2 className="development-experience">Development Experience</h2>
+          <h3 className="devleague">DevLeague</h3>
+          <p>Full Stack Developer Bootcamp</p><p>Nov 2016 - May 2017  </p>
+          <ul>
+          <li>Immersed myself in learning how to build full-stack applications in Javascript for 20-30 hours per week, while keeping up with my full-time day job as a Project Manager.</li>
+          <li>Ventured beyond the typical bootcamp curriculum by learning Shell scripting to automate the collection and cleaning of data and insertion into databases, and DevOps tasks such as setting servers and databases for production.</li>
+          <li>Created life-long friendships and learned the importance of working as a team through group projects and pair-programming.</li>
+          </ul>
+          <hr />
+          <h3 className="buoy-call-web-application">Buoy Call Web Application</h3>
+          <p><a href="https://github.com/andimiya/buoy-call">Github</a> | <a href="https://buoycall.org">BuoyCall.org</a><br />April 2017<br />Collaborated with 3 other students to create an application which found and displayed historical buoy data as well plotted both buoys and sharks on a map. Users were able to interact with the application by clicking on any buoy to view graphed data, and could also select a shark on the map and name it by making a five dollar donation.</p>
+          <h4 className="contributions-to-this-project-include-">Contributions to this project include:</h4>
+          <ul>
+          <li>Creating the database schemas for our buoy data and buoy coordinates data.</li>
+          <li>Writing of bash scripts to collect data from various webpages, create csv files, adjust headers and file contents to be importable into our database, then import the data into PostgreSQL.</li>
+          <li>Stripe implementation on both the server-side and client-side so our application could receive real credit card donations.</li>
+          <li>Deployment of the application which involved nginx, pm2, the configuration and setup of two Digital Ocean droplets (one for our database and one for our application), and  implementation of LetsEncrypt.</li>
+          </ul>
+          <hr />
           <h2 className="professional-experience">Professional Experience</h2>
           <h3 className="project-manager">Project Manager</h3>
           <p>Sudokrew Solutions<br />Honolulu, HI<br />2016 - Present  </p>
@@ -74,45 +139,6 @@ const ResumeBody = props => {
           <li>Worked closely between developers and Outrigger stakeholders to understand and communicate business use cases between both parties. This included prioritization of issues/bug fixes by weighing level of developer effort versus business need and communicating to all parties any limitations and timelines.</li>
           <li>Utilized Omniture analytics software for general marketing analytics and decision-making when testing creative concepts. Worked with Omniture analytics back-end architecture, naming conventions, SAINT classifications and page code during the redesign to ensure accurate tagging and no data loss.</li>
           </ul>
-          </div>
-          <div className="resume-container">
-          <h2 className="education">Education</h2>
-          <h3 className="full-stack-javascript-developer">Full Stack Javascript Developer</h3>
-          <p><a href="http://www.devleague.com">DevLeague</a><br />Honolulu, Hawaii<br />Nov 2016 - May 2017  </p>
-          <h3 className="bachelor-of-arts-in-business-administration">Bachelor of Arts in Business Administration</h3>
-          <p>Concentration in Marketing and International Business<br />University of Oregon, 2005 – 2007<br />University of Hawaii at Manoa , 2008 – 2009  </p>
-          <h2 className="technical-skills">Technical Skills</h2>
-          <h3 className="languages">Languages</h3>
-          <p>JavaScript, HTML5, CSS, SQL</p>
-          <h3 className="frontend-proficiencies">Frontend Proficiencies</h3>
-          <p>HTML5, CSS3, SASS, Javascript, ES6, React, Redux</p>
-          <h3 className="server-side-proficiencies">Server-Side Proficiencies</h3>
-          <p>NodeJS, Express, Sequelize</p>
-          <h3 className="database-proficiencies">Database Proficiencies</h3>
-          <p>PostgreSQL</p>
-          <h3 className="web-skills">Web Skills</h3>
-          <ul>
-          <li>Responsive/Mobile First Web Development</li>
-          <li>Relational - and Non-Relational Database Modeling</li>
-          <li>RESTful API Development</li>
-          <li>API Integration</li>
-          <li>Shell Scripting</li>
-          </ul>
-          <h3 className="other-skills-and-certifications">Other Skills and Certifications</h3>
-          <ul>
-          <li>Sitecore CMS ( Sitecore Certified)</li>
-          <li>Sitecore OMS (Sitecore Certified)</li>
-          <li>Sitecore DMS (Sitecore Certified)</li>
-          <li>Adobe Sitecatalyst (Omniture)</li>
-          <li>Adobe Test &amp; Target</li>
-          <li>Farelogix Merchandising System </li>
-          <li>Microsoft Sharepoint CMS</li>
-          <li>Web layouts and wire-framing</li>
-          <li>Adobe Photoshop CS6</li>
-          <li>Adobe Illustrator CS6</li>
-          <li>Google AdWords</li>
-          </ul>
-          </div>
         </div>
       </div>
     </div>

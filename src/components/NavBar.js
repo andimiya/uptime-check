@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+const nameScript = require('../assets/name-script.png');
 
 const NavBar = () => {
   return (
     <div className="navbar-container">
       <div className="logo-container">
         <Link to="/">
-          <h2>Andrea</h2>
+          <img src={nameScript} width="180px" alt="Andrea Takamiya" />
         </Link>
       </div>
       <div className="menu-container">
