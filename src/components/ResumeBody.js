@@ -30,6 +30,10 @@ const ResumeBody = props => {
               <a href="https://www.linkedin.com/in/andreatakamiya">
               <img src={linkedinSVG} height="18px" alt="Connect on LinkedIn" />  LinkedIn.com/AndreaTakamiya</a>
             </span>
+            <span>
+              <a href="../assets/Andrea-Takamiya-Resume.pdf">
+              <img src={linkedinSVG} height="18px" alt="Connect on LinkedIn" />  Download Resume</a>
+            </span>
           </p>
           <hr />
           <div className="header-with-icon">

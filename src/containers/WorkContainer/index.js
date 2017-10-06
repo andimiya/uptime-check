@@ -6,7 +6,7 @@ import { SPACE_ID, ACCESSTOKEN } from '../../constants';
 class WorkContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.selectedWork = this.selectedWork.bind(this);
+    this.handleResourceClick = this.handleResourceClick.bind(this);
     this.client = createClient({
       space: SPACE_ID,
       accessToken: ACCESSTOKEN
@@ -25,8 +25,8 @@ class WorkContainer extends React.Component {
     })
   }
 
-  selectedWork(e){
-    this.setState({ selectedWork: e.target.id })
+  handleResourceClick(e){
+    console.log(e.target.id, 'workcontainer id');
   }
 
   render(props) {
@@ -37,12 +37,12 @@ class WorkContainer extends React.Component {
             return (
               <GridTile
                 key={sys.id}
-                id={sys.id}
+                id={fields.slug}
                 title={fields.title}
                 position={fields.position}
                 slug={fields.slug}
                 workSample={fields.workSample.fields.file.url}
-                selectedWork={this.selectedWork}
+                handleResourceClick={this.handleResourceClick}
               />
             );
           })}
