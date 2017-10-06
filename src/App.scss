@@ -178,10 +178,14 @@ $large-width: 1024px;
 }
 
 .resume-container {
-  margin: 5rem;
+  // margin: 2rem 10% 2rem 10%;
+  border: 10px solid red;
 }
 
 .resume-body-container {
+  display: flex;
+  border: 10px solid blue;
+
   h1 {
     text-transform: uppercase;
     font-weight: 100;
@@ -194,7 +198,10 @@ $large-width: 1024px;
     font-size: 1.3rem;
   }
   h3 {
-    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #739590;
+    font-size: 1rem;
   }
   h4 {
     text-transform: uppercase;
@@ -203,5 +210,10 @@ $large-width: 1024px;
 
   .address-block {
     text-align: center;
+  }
+  .resume-container {
+    border: 1px solid #BBC7BA;
+    margin: 0;
+    padding: 0;
   }
 }
