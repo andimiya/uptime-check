@@ -1,7 +1,6 @@
 import React from 'react';
 import WorkShowcase from '../../components/WorkShowcase';
 import WorkContainer from '../../containers/WorkContainer';
-import GridTile from '../../components/GridTile';
 import { createClient } from 'contentful';
 import { SPACE_ID, ACCESSTOKEN } from '../../constants';
 
@@ -15,7 +14,8 @@ class WorkShowcaseContainer extends React.Component {
       accessToken: ACCESSTOKEN
     });
     this.state = {
-      content: {},
+      content: [],
+      selectedContent: {},
       urlSlug: '',
       id: '',
       error: ''
@@ -27,57 +27,33 @@ class WorkShowcaseContainer extends React.Component {
   }
 
   getAllResources(){
-    let urlSlug = this.props.location.pathname.split('/').pop();
     this.client.getEntries()
     .then((entry) => {
-      console.log(entry.items[0].fields.slug, 'entry');
-      for (let i = 0; i < entry.items.length; i++) {
-        if (urlSlug === entry.items[i].fields.slug) {
-          console.log('true');
-          this.setState ({ content: entry.items[i].fields })
-        }
-        else {
-          console.log('no match');
-        }
-      }
+      this.setState ({ content: entry.items })
     })
   }
 
   handleResourceClick(e) {
     console.log(e.target.id, 'click id');
-    this.client.getEntries()
-    .then((entry) => {
-      for (let i = 0; i < entry.items.length; i++) {
-        if (this.state.urlSlug === entry.items[i].fields.slug) {
-          console.log('true');
-          this.setState ({ content: entry.items[i].fields })
-
-        }
-        else {
-          console.log('no match');
-        }
-      }
-    })
+    const currentlySelected = this.state.content.find((workItem) => workItem.fields.slug === e.target.id);
+    if (!currentlySelected){
+      this.setState ({ error: 'error' })
+    } else {
+      this.setState({ selectedContent: currentlySelected.fields })
+    }
   }
 
   render(props) {
-    console.log(this.state.content.slug, 'state');
     return (
       <div className="work-showcase-container outer">
         <WorkShowcase
-          title={this.state.content.title}
-          description={this.state.content.description}
+          title={this.state.selectedContent.title}
+          description={this.state.selectedContent.description}
           />
-        <WorkContainer>
-          <GridTile
-            key={this.state.content.id}
-            id={this.state.content.slug}
-            title={this.state.content.title}
-            position={this.state.content.position}
-            slug={this.state.content.slug}
-            handleResourceClick={this.handleResourceClick}
-          />
-        </WorkContainer>
+        <WorkContainer
+          content={this.state.content}
+          handleResourceClick={this.handleResourceClick}
+        />
       </div>
     );
   }
