@@ -1,14 +1,41 @@
 import React from 'react';
 import GridTile from '../../components/GridTile';
+import { createClient } from 'contentful';
+import { SPACE_ID, ACCESSTOKEN } from '../../constants';
 
 class WorkContainer extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.getAllResources = this.getAllResources.bind(this);
+
+    this.client = createClient({
+      space: SPACE_ID,
+      accessToken: ACCESSTOKEN
+    });
+
+    this.state = {
+      content: [],
+      error: ''
+    };
+  }
+
+  componentDidMount(){
+    this.getAllResources();
+  }
+
+  getAllResources(){
+    this.client.getEntries()
+    .then((entry) => {
+      this.setState ({ content: entry.items })
+    })
+  }
 
   render(props) {
-
     return (
       <div className="work-container outer">
         <div className="grid-area-container">
-          {this.props.content.map(({ fields, sys }, index) => {
+          {this.state.content.map(({ fields, sys }, index) => {
             return (
               <GridTile
                 key={sys.id}

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const GridTile = props => {
-  console.log(props, 'grid tile props');
   return (
     <div className="grid-container-outer">
       <div className="grid-container">
