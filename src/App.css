@@ -21,9 +21,13 @@
   letter-spacing: 1.8px;
   color: black; }
 
+.name-container,
+.name-container a:hover {
+  color: white; }
+
 .menu-item {
   visibility: hidden; }
-  @media (min-width: 650px) {
+  @media (min-width: 750px) {
     .menu-item {
       visibility: visible;
       padding-left: 2rem;
@@ -39,7 +43,7 @@
         color: black; }
       .menu-item,
       .menu-item a, .menu-item p:hover {
-        color: #BBC7BA; } }
+        color: white; } }
 
 .work-container {
   margin: auto;
@@ -76,7 +80,7 @@
   .grid-image-block:hover .grid-hover {
     box-sizing: border-box;
     height: 300px;
-    background-color: #99A89E;
+    background-color: #75d6c7;
     opacity: 0.2; }
 
 .grid-subtext {
@@ -136,7 +140,11 @@
 .resume-body-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 0 15% 10rem 15%; }
+  @media (min-width: 750px) {
+    .resume-body-container {
+      flex-wrap: nowrap; } }
   .resume-body-container h1 {
     text-transform: uppercase;
     font-weight: 300;
@@ -153,10 +161,11 @@
     font-weight: 300;
     letter-spacing: 2px;
     font-size: 1.2rem;
-    margin: 1.5rem 0 0 0; }
+    margin: 1.8rem 0 0 0; }
   .resume-body-container h4 {
     text-transform: uppercase;
-    font-weight: 300; }
+    font-weight: 300;
+    margin: 1rem 0 0 0; }
   .resume-body-container hr {
     margin: 2rem;
     color: gray; }
@@ -179,7 +188,8 @@
       margin-right: 0.3rem; }
   .resume-body-container .address-block {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-top: 1.5rem; }
     .resume-body-container .address-block span {
       flex: 0 0 100%; }
     .resume-body-container .address-block a {
@@ -191,12 +201,19 @@
       .resume-body-container .address-block a img {
         margin: 0 0.4rem 0 0.4rem; }
   .resume-body-container .sidebar-container {
-    flex: 0 0 30%;
+    flex: 0 0 100%;
     padding: 3rem 2rem 0 2rem;
     margin-top: 1.5rem;
-    border-right: 1px solid #A5A5A5; }
+    border: none; }
+    @media (min-width: 750px) {
+      .resume-body-container .sidebar-container {
+        flex: 0 0 30%;
+        border-right: 1px solid #A5A5A5; } }
   .resume-body-container .right-panel-container {
+    flex: 0 0 100%;
     padding: 1rem 0 0 0;
-    flex: 0 0 65%;
     margin-top: 2rem;
     padding: 1.5rem 3rem 3rem 3rem; }
+    @media (min-width: 750px) {
+      .resume-body-container .right-panel-container {
+        flex: 0 0 65%; } }

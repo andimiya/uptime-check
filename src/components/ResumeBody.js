@@ -38,24 +38,24 @@ const ResumeBody = props => {
             <img src={educationIcon} height="32px" alt="Education" />
             <h2 className="education">Education</h2>
           </div>
-          <h3 className="full-stack-javascript-developer">Full Stack Javascript Developer</h3>
+          <h4 className="full-stack-javascript-developer">Full Stack Javascript Developer</h4>
           <p><a href="http://www.devleague.com">DEVLEAGUE</a><br />Honolulu, Hawaii<br />Nov 2016 - May 2017  </p>
-          <h3 className="bachelor-of-arts-in-business-administration">Bachelor of Arts in Business Administration</h3>
-          <p>Concentration in Marketing and International Business<br />University of Oregon, 2005 – 2007<br />University of Hawaii at Manoa , 2008 – 2009  </p>
+          <h4 className="bachelor-of-arts-in-business-administration">Bachelor of Arts in Business Administration</h4>
+          <p>Concentration in Marketing and International Business<br />University of Oregon: 2005 – 2007<br />University of Hawaii at Manoa: 2008 – 2009  </p>
           <hr />
           <div className="header-with-icon">
             <img src={techskillsIcon} height="32px" alt="Technical Skills" />
             <h2 className="technical-skills">Technical Skills</h2>
           </div>
-          <h3 className="languages">Languages</h3>
+          <h4 className="languages">Languages</h4>
           <p>JavaScript, HTML5, CSS, SQL</p>
-          <h3 className="frontend-proficiencies">Frontend</h3>
+          <h4 className="frontend-">Frontend</h4>
           <p>HTML5, CSS3, SASS, Javascript, ES6, React, Redux</p>
-          <h3 className="server-side-proficiencies">Server-Side</h3>
+          <h4 className="server-side-proficiencies">Server-Side</h4>
           <p>NodeJS, Express, Sequelize</p>
-          <h3 className="database-proficiencies">Database</h3>
+          <h4 className="database-proficiencies">Database</h4>
           <p>PostgreSQL</p>
-          <h3 className="web-skills">Web Skills</h3>
+          <h4 className="web-skills">Web Skills</h4>
           <ul>
           <li>Responsive/Mobile First Web Development</li>
           <li>Relational - and Non-Relational Database Modeling</li>
@@ -63,7 +63,7 @@ const ResumeBody = props => {
           <li>API Integration</li>
           <li>Shell Scripting</li>
           </ul>
-          <h3 className="other-skills-and-certifications">Marketing and Other Skills</h3>
+          <h4 className="other-skills-and-certifications">Marketing and Other Skills</h4>
           <ul>
           <li>Adobe Sitecatalyst (Omniture)</li>
           <li>Adobe Test &amp; Target</li>
