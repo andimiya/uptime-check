@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.37c2687b.css",
-  "main.css.map": "static/css/main.37c2687b.css.map",
-  "main.js": "static/js/main.aa328c69.js",
-  "main.js.map": "static/js/main.aa328c69.js.map",
+  "main.css": "static/css/main.940cdf3d.css",
+  "main.css.map": "static/css/main.940cdf3d.css.map",
+  "main.js": "static/js/main.45a3901b.js",
+  "main.js.map": "static/js/main.45a3901b.js.map",
   "static/media/andrea-picture-blackwhite.jpeg": "static/media/andrea-picture-blackwhite.5c16c0df.jpeg",
   "static/media/andrea-picture-color.jpg": "static/media/andrea-picture-color.a99c683f.jpg",
   "static/media/certificationsIcon.svg": "static/media/certificationsIcon.8cd416ce.svg",
@@ -11,6 +11,5 @@
   "static/media/gmail.svg": "static/media/gmail.99c4c98b.svg",
   "static/media/instagram.svg": "static/media/instagram.2e1debcc.svg",
   "static/media/linkedin.svg": "static/media/linkedin.08d72080.svg",
-  "static/media/name-script.png": "static/media/name-script.95a98afc.png",
   "static/media/techskillsIcon.svg": "static/media/techskillsIcon.f108a36d.svg"
 }
