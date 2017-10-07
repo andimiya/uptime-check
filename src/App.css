@@ -4,13 +4,22 @@
   letter-spacing: 0.3px; }
 
 .navbar-container {
-  padding: 4rem 5rem 3rem 5rem;
+  padding: 0.1rem 3rem 0.1rem 3rem;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #74DFCF; }
 
 .menu-container {
   display: flex; }
+
+.name-container a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  color: black; }
 
 .menu-item {
   visibility: hidden; }
@@ -93,13 +102,12 @@
   display: flex;
   border-bottom: 1px solid grey;
   padding-bottom: 3rem;
-  margin: 0 3rem 3rem 3rem; }
+  margin: 3rem 3rem 3rem 3rem; }
 
 .showcase-image-block {
   margin: 2rem;
-  width: 500px;
-  height: 250px;
-  flex: 0 0 40%;
+  height: 400px;
+  flex: 0 0 60%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -141,8 +149,9 @@
   .resume-body-container h3 {
     text-transform: uppercase;
     font-weight: 300;
-    color: #739590;
-    font-size: 1rem; }
+    color: #4D54BC;
+    letter-spacing: 2px;
+    font-size: 0.9rem; }
   .resume-body-container h4 {
     text-transform: uppercase;
     font-weight: 300; }
@@ -153,6 +162,8 @@
   .resume-body-container a {
     text-decoration: none;
     color: black; }
+  .resume-body-container li {
+    margin-bottom: 1rem; }
   .resume-body-container .picture {
     text-align: center; }
   .resume-body-container .header-with-icon {
@@ -176,10 +187,9 @@
   .resume-body-container .sidebar-container {
     flex: 0 0 30%;
     padding: 0.5rem 2rem 0 2rem;
-    background-color: #F3F3F3; }
+    border-right: 1px solid gray; }
   .resume-body-container .right-panel-container {
     width: 50%;
     padding: 1rem 0 0 0;
     flex: 0 0 65%;
-    background-color: #FAFAFA;
     padding: 1.5rem 3rem 3rem 3rem; }

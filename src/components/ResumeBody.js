@@ -15,7 +15,7 @@ const ResumeBody = props => {
         <div className="sidebar-container">
           <h1 className="name">Andrea Takamiya</h1>
           <div className="picture">
-            <img src={profilePicBw} width="250px" alt="Andrea Takamiya" />
+            <img src={profilePicColor} width="250px" alt="Andrea Takamiya" />
           </div>
           <p className="address-block">
             <span>
