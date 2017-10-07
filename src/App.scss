@@ -20,8 +20,10 @@ $large-width: 1024px;
   }
 }
 
-$background-color-dark: #74DFCF;
+$background-color-dark: #75d6c7;
 $text-color-dark: black;
+$text-color-h2: #68c9ba;
+$text-link: #5db2a6;
 
 #app-container {
   font-family: 'futura-pt';
@@ -205,15 +207,17 @@ $text-color-dark: black;
   }
   h2 {
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    color: $text-color-h2;
   }
   h3 {
     text-transform: uppercase;
     font-weight: 300;
-    color: #4D54BC;
     letter-spacing: 2px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0 0;
   }
   h4 {
     text-transform: uppercase;
@@ -221,16 +225,21 @@ $text-color-dark: black;
   }
   hr {
     margin: 2rem;
+    color: gray;
   }
   p {
     line-height: 1.4rem;
+    margin: 0.3rem 0 0 0;
   }
   a {
     text-decoration: none;
-    color: black;
+    color: $text-link;
+  }
+  ul {
+    margin: 0 0 0.5rem 0;
   }
   li {
-    margin-bottom: 1rem;
+    margin: 0.5rem 0 0.5rem 0;
   }
   .picture {
     text-align: center;
@@ -261,15 +270,17 @@ $text-color-dark: black;
   }
   .sidebar-container {
     flex: 0 0 30%;
-    padding: 0.5rem 2rem 0 2rem;
-    border-right: 1px solid gray;
+    padding: 3rem 2rem 0 2rem;
+    margin-top: 1.5rem;
+    border-right: 1px solid #A5A5A5;
     // background-color: #F3F3F3;
     // border: 10px solid red;
   }
   .right-panel-container {
-    width: 50%;
+    // width: 50%;
     padding: 1rem 0 0 0;
     flex: 0 0 65%;
+    margin-top: 2rem;
     // background-color: #FAFAFA;
     padding: 1.5rem 3rem 3rem 3rem;
     // border: 10px solid blue;

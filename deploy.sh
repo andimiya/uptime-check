@@ -1,10 +1,11 @@
 #!/bin/bash
 
-git remote rename origin upstream
-
-git remote add origin git@github.com:andimiya/andimiya.github.io.git
+npm run build
 
 git add build/index.html
+git add build/asset-manifest.json
+git add build/service-worker.js
+git add build/static -f
 git commit -m "Initial commit"
 
 git push origin master

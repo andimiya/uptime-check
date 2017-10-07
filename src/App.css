@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #74DFCF; }
+  background-color: #75d6c7; }
 
 .menu-container {
   display: flex; }
@@ -144,26 +144,32 @@
     font-size: 2rem; }
   .resume-body-container h2 {
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 1.3rem; }
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    color: #68c9ba; }
   .resume-body-container h3 {
     text-transform: uppercase;
     font-weight: 300;
-    color: #4D54BC;
     letter-spacing: 2px;
-    font-size: 0.9rem; }
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0 0; }
   .resume-body-container h4 {
     text-transform: uppercase;
     font-weight: 300; }
   .resume-body-container hr {
-    margin: 2rem; }
+    margin: 2rem;
+    color: gray; }
   .resume-body-container p {
-    line-height: 1.4rem; }
+    line-height: 1.4rem;
+    margin: 0.3rem 0 0 0; }
   .resume-body-container a {
     text-decoration: none;
-    color: black; }
+    color: #5db2a6; }
+  .resume-body-container ul {
+    margin: 0 0 0.5rem 0; }
   .resume-body-container li {
-    margin-bottom: 1rem; }
+    margin: 0.5rem 0 0.5rem 0; }
   .resume-body-container .picture {
     text-align: center; }
   .resume-body-container .header-with-icon {
@@ -186,10 +192,11 @@
         margin: 0 0.4rem 0 0.4rem; }
   .resume-body-container .sidebar-container {
     flex: 0 0 30%;
-    padding: 0.5rem 2rem 0 2rem;
-    border-right: 1px solid gray; }
+    padding: 3rem 2rem 0 2rem;
+    margin-top: 1.5rem;
+    border-right: 1px solid #A5A5A5; }
   .resume-body-container .right-panel-container {
-    width: 50%;
     padding: 1rem 0 0 0;
     flex: 0 0 65%;
+    margin-top: 2rem;
     padding: 1.5rem 3rem 3rem 3rem; }
