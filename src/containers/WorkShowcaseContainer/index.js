@@ -29,12 +29,20 @@ class WorkShowcaseContainer extends React.Component {
   getAllResources(){
     this.client.getEntries()
     .then((entry) => {
-      this.setState ({ content: entry.items })
+      this.setState ({ content: entry.items });
+      let urlSlug = this.props.location.pathname.split('/').pop();
+      console.log(urlSlug, 'slug');
+      const currentlySelected = this.state.content.find((workItem) => workItem.fields.slug === urlSlug);
+      if (!currentlySelected){
+        this.setState({ error: 'error' })
+      } else {
+        this.setState({ selectedContent: currentlySelected.fields })
+      }
     })
   }
 
   handleResourceClick(e) {
-    console.log(e.target.id, 'click id');
+    // console.log(e.target.id, 'click id');
     const currentlySelected = this.state.content.find((workItem) => workItem.fields.slug === e.target.id);
     if (!currentlySelected){
       this.setState ({ error: 'error' })
