@@ -1,16 +1,13 @@
 #app-container {
-  font-family: 'futura-pt'; }
+  font-family: 'futura-pt';
+  font-weight: 300;
+  letter-spacing: 0.3px; }
 
 .navbar-container {
   padding: 4rem 5rem 3rem 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between; }
-
-.logo-container h2 {
-  text-decoration: none;
-  color: black;
-  font-weight: 400; }
 
 .menu-container {
   display: flex; }
@@ -134,21 +131,21 @@
   margin: 0 15% 10rem 15%; }
   .resume-body-container h1 {
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
     font-size: 2rem; }
   .resume-body-container h2 {
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.3rem; }
   .resume-body-container h3 {
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
     color: #739590;
     font-size: 1rem; }
   .resume-body-container h4 {
     text-transform: uppercase;
-    font-weight: 100; }
+    font-weight: 300; }
   .resume-body-container hr {
     margin: 2rem; }
   .resume-body-container p {

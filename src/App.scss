@@ -22,6 +22,8 @@ $large-width: 1024px;
 
 #app-container {
   font-family: 'futura-pt';
+  font-weight: 300;
+  letter-spacing: 0.3px;
 }
 
 .navbar-container {
@@ -29,14 +31,6 @@ $large-width: 1024px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.logo-container {
-  h2 {
-    text-decoration: none;
-    color: black;
-    font-weight: 400;
-  }
 }
 
 .menu-container {
@@ -191,24 +185,24 @@ $large-width: 1024px;
 
   h1 {
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
     font-size: 2rem;
   }
   h2 {
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.3rem;
   }
   h3 {
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
     color: #739590;
     font-size: 1rem;
   }
   h4 {
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
   }
   hr {
     margin: 2rem;
