@@ -7,6 +7,7 @@ const educationIcon = require('../assets/educationIcon.svg');
 const techskillsIcon = require('../assets/techskillsIcon.svg');
 const certificationsIcon = require('../assets/certificationsIcon.svg');
 const profilePicColor = require('../assets/andrea-picture-color.jpg');
+const pdf = require('../assets/Andrea-Takamiya-Resume.pdf');
 
 const ResumeBody = props => {
   return (
@@ -18,19 +19,19 @@ const ResumeBody = props => {
           </div>
           <p className="address-block">
             <span>
-              <a href="mailto:takamiya.andrea@gmail.com">
+              <a href="mailto:takamiya.andrea@gmail.com" target="_blank" rel="noopener noreferrer">
               <img src={gmailSVG} height="18px" alt="Email Andrea" /> Takamiya.Andrea@Gmail.com</a>
             </span>
             <span>
-              <a href="https://github.com/andimiya">
+              <a href="https://github.com/andimiya" target="_blank" rel="noopener noreferrer">
               <img src={githubSVG} height="18px" alt="Check out my code" /> Github.com/Andimiya</a>
             </span>
             <span>
-              <a href="https://www.linkedin.com/in/andreatakamiya">
+              <a href="https://www.linkedin.com/in/andreatakamiya"  target="_blank" rel="noopener noreferrer">
               <img src={linkedinSVG} height="18px" alt="Connect on LinkedIn" />  LinkedIn.com/AndreaTakamiya</a>
             </span>
             <span>
-              <a href="../assets/Andrea-Takamiya-Resume.pdf">
+              <a href={pdf} target="_blank" rel="noopener noreferrer">
               <img src={downloadIcon} height="24px" alt="Download Resume" />  Download Resume</a>
             </span>
           </p>
@@ -40,7 +41,7 @@ const ResumeBody = props => {
             <h2 className="education">Education</h2>
           </div>
           <h4 className="full-stack-javascript-developer">Full Stack Javascript Developer</h4>
-          <p><a href="http://www.devleague.com">DEVLEAGUE</a><br />Honolulu, Hawaii<br />Nov 2016 - May 2017  </p>
+          <p><a href="http://www.devleague.com" target="_blank" rel="noopener noreferrer">DEVLEAGUE</a><br />Honolulu, Hawaii<br />Nov 2016 - May 2017  </p>
           <h4 className="bachelor-of-arts-in-business-administration">Bachelor of Arts in Business Administration</h4>
           <p>Concentration in Marketing and International Business<br />University of Oregon: 2005 – 2007<br />University of Hawaii at Manoa: 2008 – 2009  </p>
           <hr />

@@ -32,11 +32,16 @@ $text-link: #5db2a6;
 }
 
 .navbar-container {
-  padding: 0.1rem 3rem 0.1rem 3rem;
+  // padding: 0 3rem 0 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: $background-color-dark;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .menu-container {
@@ -44,6 +49,7 @@ $text-link: #5db2a6;
 }
 
 .name-container {
+  padding-left: 2rem;
   a {
     text-transform: uppercase;
     text-decoration: none;
@@ -61,7 +67,7 @@ $text-link: #5db2a6;
   visibility: hidden;
   @include medium {
     visibility: visible;
-    padding-left: 2rem;
+    padding-right: 2rem;
     white-space: nowrap;
     text-align: center;
     p,
@@ -280,7 +286,7 @@ $text-link: #5db2a6;
   .sidebar-container {
     flex: 0 0 100%;
     padding: 3rem 2rem 0 2rem;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     border: none;
     @include medium {
       flex: 0 0 30%;
@@ -290,7 +296,7 @@ $text-link: #5db2a6;
   .right-panel-container {
     flex: 0 0 100%;
     padding: 1rem 0 0 0;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     padding: 1.5rem 3rem 3rem 3rem;
     @include medium {
       flex: 0 0 65%;
