@@ -2,6 +2,7 @@ import React from 'react';
 const githubSVG = require('../assets/github.svg');
 const linkedinSVG = require('../assets/linkedin.svg');
 const gmailSVG = require('../assets/gmail.svg');
+const downloadIcon = require('../assets/downloadIcon.svg');
 const educationIcon = require('../assets/educationIcon.svg');
 const techskillsIcon = require('../assets/techskillsIcon.svg');
 const certificationsIcon = require('../assets/certificationsIcon.svg');
@@ -30,7 +31,7 @@ const ResumeBody = props => {
             </span>
             <span>
               <a href="../assets/Andrea-Takamiya-Resume.pdf">
-              <img src={linkedinSVG} height="18px" alt="Connect on LinkedIn" />  Download Resume</a>
+              <img src={downloadIcon} height="24px" alt="Download Resume" />  Download Resume</a>
             </span>
           </p>
           <hr />
