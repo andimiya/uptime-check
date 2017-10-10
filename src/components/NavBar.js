@@ -28,23 +28,23 @@ class NavBar extends React.Component {
     return (
       <div className={this.state.navClass}>
         <div className="name-container">
-          <Link to="/">
+          <Link to="/" onClick={this.handleClick}>
             <p>Andrea Takamiya</p>
           </Link>
         </div>
         <div className="menu-item-container">
           <div className="menu-item">
-            <Link to="/work">
+            <Link to="/work" onClick={this.handleClick}>
               <p>Work</p>
             </Link>
           </div>
           <div className="menu-item">
-            <Link to="/resume">
+            <Link to="/resume" onClick={this.handleClick}>
               <p>Resume</p>
             </Link>
           </div>
           <div className="menu-item">
-            <Link to="/contact">
+            <Link to="/contact" onClick={this.handleClick}>
               <p>Contact</p>
             </Link>
           </div>
