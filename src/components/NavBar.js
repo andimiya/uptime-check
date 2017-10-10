@@ -23,8 +23,6 @@ class NavBar extends React.Component {
   }
 
   render() {
-    console.log(this.state.navClass);
-
     return (
       <div className={this.state.navClass}>
         <div className="name-container">
