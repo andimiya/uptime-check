@@ -32,9 +32,7 @@ $text-link: #5db2a6;
 }
 
 .navbar-container {
-  // padding: 0 3rem 0 3rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   background-color: $background-color-dark;
   opacity: 0.8;
@@ -42,14 +40,25 @@ $text-link: #5db2a6;
   top: 0;
   left: 0;
   width: 100%;
+  height: 3.5rem;
 }
 
-.menu-container {
+.hamburger {
+  visibility: visible;
   display: flex;
+  align-items: center;
+  padding-right: 2rem;
+  @include medium {
+    visibility: hidden;
+  }
 }
 
 .name-container {
-  padding-left: 2rem;
+  display: flex;
+  padding-left: 3rem;
+  flex: 0 0 40%;
+  align-items: center;
+
   a {
     text-transform: uppercase;
     text-decoration: none;
@@ -63,13 +72,23 @@ $text-link: #5db2a6;
   }
 }
 
-.menu-item {
+.menu-item-container {
   visibility: hidden;
   @include medium {
     visibility: visible;
-    padding-right: 2rem;
-    white-space: nowrap;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex: 0 0 50%;
+    justify-content: flex-end;
+  }
+}
+
+.menu-item {
+  visibility: hidden;
+
+  @include medium {
+    padding-left: 2rem;
+    visibility: visible;
     p,
     a {
       text-transform: uppercase;

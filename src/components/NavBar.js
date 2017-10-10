@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// const nameScript = require('../assets/name-script.png');
+const hamburger = require('../assets/hamburger.svg');
 
 const NavBar = () => {
   return (
@@ -10,7 +10,7 @@ const NavBar = () => {
           <p>Andrea Takamiya</p>
         </Link>
       </div>
-      <div className="menu-container">
+      <div className="menu-item-container">
         <div className="menu-item">
           <Link to="/work">
             <p>Work</p>
@@ -26,6 +26,11 @@ const NavBar = () => {
             <p>Contact</p>
           </Link>
         </div>
+      </div>
+      <div className="hamburger">
+        <Link to="/work">
+          <img src={hamburger} alt="Work, Resume, Contact" width="40px"/>
+        </Link>
       </div>
     </div>
   );
