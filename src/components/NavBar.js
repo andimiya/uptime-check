@@ -7,6 +7,7 @@ class NavBar extends React.Component {
     super(props);
 
     this.handleClick = this.handleClick.bind(this);
+    this.collapseNav = this.collapseNav.bind(this);
 
     this.state = {
       navClass: 'navbar-container'
@@ -14,7 +15,6 @@ class NavBar extends React.Component {
   }
 
   handleClick(){
-    console.log(this.state.navClass);
     if (this.state.navClass === 'navbar-container') {
       this.setState ({ navClass: 'responsive-container' })
     } else {
@@ -22,34 +22,38 @@ class NavBar extends React.Component {
     }
   }
 
+  collapseNav(){
+    this.setState ({ navClass: 'navbar-container'})
+  }
+
   render() {
     return (
       <div className={this.state.navClass}>
         <div className="name-container">
-          <Link to="/" onClick={this.handleClick}>
+          <Link to="/" onClick={this.collapseNav}>
             <p>Andrea Takamiya</p>
           </Link>
         </div>
         <div className="menu-item-container">
           <div className="menu-item">
-            <Link to="/work" onClick={this.handleClick}>
+            <Link to="/work" onClick={this.collapseNav}>
               <p>Work</p>
             </Link>
           </div>
           <div className="menu-item">
-            <Link to="/resume" onClick={this.handleClick}>
+            <Link to="/resume" onClick={this.collapseNav}>
               <p>Resume</p>
             </Link>
           </div>
           <div className="menu-item">
-            <Link to="/contact" onClick={this.handleClick}>
+            <Link to="/contact" onClick={this.collapseNav}>
               <p>Contact</p>
             </Link>
           </div>
         </div>
         <div className="hamburger">
           <div onClick={this.handleClick}>
-            <img src={hamburger} alt="Work, Resume, Contact" width="40px"/>
+            <img src={hamburger} alt="Work, Resume, Contact" width="40px"onClick={this.handleClick} />
           </div>
         </div>
       </div>

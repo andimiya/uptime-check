@@ -129,7 +129,7 @@ $text-link: #5db2a6;
       justify-content: center;
       visibility: visible;
       flex: 0 0 100%;
-      p,
+      p ,
       a {
         text-transform: uppercase;
         text-decoration: none;
@@ -180,8 +180,11 @@ $text-link: #5db2a6;
 
 .grid-container-outer {
   display: flex;
-  width: 40%;
+  width: 80%;
   margin: 2rem;
+  @include medium {
+    width: 40%;
+  };
 }
 
 .grid-container {
@@ -225,6 +228,7 @@ $text-link: #5db2a6;
     margin: 1.5rem 0 0 0;
     p {
       text-transform: uppercase;
+      text-align: center;
       letter-spacing: 1px;
       margin: 0;
     }
