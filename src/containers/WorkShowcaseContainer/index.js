@@ -45,6 +45,7 @@ class WorkShowcaseContainer extends React.Component {
 
   handleResourceClick(e) {
     const currentlySelected = this.state.content.find((workItem) => workItem.fields.slug === e.target.id);
+    this.scrollTo(0,0);
     if (!currentlySelected){
       this.setState ({ error: 'error' })
     } else {
