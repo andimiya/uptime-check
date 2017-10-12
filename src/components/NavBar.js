@@ -45,11 +45,6 @@ class NavBar extends React.Component {
               <p>Resume</p>
             </Link>
           </div>
-          <div className="menu-item">
-            <Link to="/contact" onClick={this.collapseNav}>
-              <p>Contact</p>
-            </Link>
-          </div>
         </div>
         <div className="hamburger">
           <div onClick={this.handleClick}>
