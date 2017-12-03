@@ -242,17 +242,15 @@ $text-link: #5db2a6;
 }
 
 .showcase-container {
-  // border: 1px solid yellow;
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid grey;
   padding: 3rem;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .showcase-image-block {
-  // border: 1px solid green;
   margin: 2rem;
   height: 400px;
   flex: 0 0 100%;
@@ -261,16 +259,12 @@ $text-link: #5db2a6;
   background-repeat: no-repeat;
   box-sizing: border-box;
 
-  @include small {
-    flex: 0 0 100%;
-  }
   @include medium {
     flex: 0 0 45%;
   }
 }
 
 .showcase-text-container {
-  border: 1px solid red;
   flex: 0 0 100%;
 
   .showcase-title {
@@ -284,7 +278,7 @@ $text-link: #5db2a6;
   }
 
   @include medium {
-    flex: 0 0 35%;
+    flex: 0 0 40%;
   }
 }
 
