@@ -91,16 +91,19 @@ const ResumeBody = props => {
           <h2 className="professional-experience">Professional Experience</h2>
           <h3 className="project-manager">Project Manager</h3>
           <p><a href="https://sudokrew.com" target="_blank" rel="noopener noreferrer">Sudokrew Solutions</a> | Honolulu, HI | 2016 - Present</p>
+          <p>Manage and assist in all areas of the business which includes:</p>
           <ul>
-            <li>Improved workflows internally for Sudokrew developers as well as externally for Sudokrew clients by applying agile methodology techniques to allow developers to stay focused and increase productivity.</li>
-            <li>Ensured that project requirements and deliverables were clearly communicated between clients and the Sudokrew team.</li>
-            <li>Improved client relationships by facilitating frequent discussions around prioritization and budgeting to ensure that client expectations were clearly communicated.</li>
+            <li>Contracting and negotiating with prospective clients</li>
+            <li>Fulfilling all contracted software projects by documenting requirements and communicating requirements to clients and developers</li>
+            <li>Overseeing individual team member priorities to ensure that everyone is aligned on timeline, requirements, and client goals.</li>
+            <li>Reviewing developer code and jumping in as a developer if needed to fix small bugs or style projects if extra developer capacity is needed</li>
+            <li>Sales and marketing to attract new customers</li>
           </ul>
           <h3 className="online-experience-manager">Online Experience Manager</h3>
           <p><a href="https://www.hawaiianairlines.com/" target="_blank" rel="noopener noreferrer">Hawaiian Airlines</a> | Honolulu, HI | 2014 – 2016</p>
           <ul>
-            <li>Received a quick promotion from Web Producer to Online Experience Manager and engaged with a team of over two hundred to successfully decommission the old HawaiianAirlines.com websites and launch seven multi-currency, multi-lingual websites for the airline.</li>
-            <li>Worked through many risks and challenges that arose during the span of the project such as the movement from waterfall to agile methodologies, adoption of new systems and platforms, defining roles and responsibilities across the project, and working with many offshore team members.</li>
+            <li>Engaged with a team of over two hundred to successfully decommission the old <a href="https://www.hawaiianairlines.com/" target="_blank" rel="noopener noreferrer">HawaiianAirlines.com</a> websites and launch seven multi-currency, multi-lingual websites for the airline.</li>
+            <li>Received a quick promotion from Web Producer to Online Experience Manager and worked through many risks and challenges that arose during the span of the project such as the movement from waterfall to agile methodologies, adoption of new systems and platforms, defining roles and responsibilities across the project, and working with many offshore team members.</li>
             <li>Managed the needs of the airline and its many stakeholders against the priorities of IT, government regulations and project timelines to ensure everyone was working towards a clear vision, hitting milestones set by the business, and accomplishing the goals of the project.</li>
           </ul>
           <h3 className="web-producer">Web Producer</h3>
