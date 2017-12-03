@@ -9,6 +9,7 @@ class WorkShowcaseContainer extends React.Component {
     super(props);
     this.getAllResources = this.getAllResources.bind(this);
     this.handleResourceClick = this.handleResourceClick.bind(this);
+
     this.client = createClient({
       space: SPACE_ID,
       accessToken: ACCESSTOKEN
