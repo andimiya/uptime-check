@@ -57,7 +57,6 @@ class WorkShowcaseContainer extends React.Component {
   }
 
   render(props) {
-    console.log(this.state.selectedWorkSample);
     return (
       <div className="work-showcase-container outer">
         <WorkShowcase
