@@ -8,7 +8,6 @@ function parseMarked (description) {
 }
 
 const WorkShowcase = props => {
-  console.log(props.description, 'description');
   return (
     <div className="showcase-container">
       <div className="showcase-image-block" style={{backgroundImage: `url(${props.workSample})`}}>
